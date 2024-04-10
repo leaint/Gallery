@@ -117,6 +117,7 @@ class PhotoFragment : ViewPagerFragment() {
         binding.apply {
             subsamplingView.setOnClickListener { photoClicked() }
             gesturesView.setOnClickListener { photoClicked() }
+            gesturesView.controller.settings.fillViewport = false
             gifView.setOnClickListener { photoClicked() }
             instantPrevItem.setOnClickListener { listener?.goToPrevItem() }
             instantNextItem.setOnClickListener { listener?.goToNextItem() }
